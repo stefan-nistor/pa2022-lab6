@@ -1,7 +1,7 @@
-import mainframe.Mainframe;
+import mainframe.MainFrame;
 
 public class Main {
     public static void main(String[] args) {
-        new Mainframe().setVisible(true);
+        var app = new MainFrame();
     }
 }

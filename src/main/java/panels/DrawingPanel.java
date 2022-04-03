@@ -1,27 +1,26 @@
 package panels;
 
-import mainframe.Mainframe;
+import mainframe.MainFrame;
 
 import javax.swing.*;
 
 public class DrawingPanel extends JPanel {
 
-    final Mainframe frame;
-    int rows, cols;
+    final MainFrame frame;
+    int rows = 10, cols = 10;
     int canvasWidth = 400, canvasHeight = 400;
     int boardWidth, boardHeight;
     int cellWidth, cellHeight;
     int padX, padY;
     int stoneSize = 20;
 
-    public DrawingPanel(Mainframe frame) {
+    public DrawingPanel(MainFrame frame) {
         this.frame = frame;
-        init(frame.getConfigPanel().getRows(), frame.getConfigPanel().getCols());
+        init();
+        frame.add(this);
     }
 
-    final void init(int rows, int cols) {
-        this.rows = rows;
-        this.cols = cols;
+    final void init() {
         this.padX = stoneSize + 10;
         this.padY = stoneSize + 10;
         this.cellWidth = (canvasWidth - 2 * padX) / (cols - 1);
