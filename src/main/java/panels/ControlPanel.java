@@ -20,7 +20,7 @@ public class ControlPanel extends JPanel {
 
     public ControlPanel(MainFrame frame) {
         super();
-        this.setBounds(0, frame.getHeight() - MainFrame.TITLE_BAR_HEIGHT - 30, frame.getWidth(), 40);
+        this.setBounds(0, frame.getHeight() - MainFrame.CONTROLS_BAR_HEIGHT - 30, frame.getWidth(), 40);
         setLayout(new GridLayout(1, 6));
         this.setBorder(BorderFactory.createMatteBorder(1, 1, 1, 1, Color.BLACK));
         this.setBackground(Color.GRAY);

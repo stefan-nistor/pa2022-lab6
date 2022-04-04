@@ -21,7 +21,7 @@ public class MainFrame extends JFrame {
     public static final int APP_WINDOW_DEFAULT_HEIGHT = 768;
     public static final int APP_WINDOW_DEFAULT_X_OFFSET = 0;
     public static final int APP_WINDOW_DEFAULT_Y_OFFSET = 0;
-    public static final int TITLE_BAR_HEIGHT = 40;
+    public static final int CONTROLS_BAR_HEIGHT = 40;
 
     private int windowWidth = APP_WINDOW_DEFAULT_WIDTH;
     private int windowHeight = APP_WINDOW_DEFAULT_HEIGHT;
